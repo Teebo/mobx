@@ -92,7 +92,7 @@ class Store {
 
 ### The `runInAction` utility
 
-A downside of inline actions is that TypeScript does not apply type inference on them, so you would have type all your callbacks.
+A downside of inline actions is that TypeScript does not apply type inference on them, so you would have to add typing to all your callbacks.
 Instead of creating an action for the entire callback, you can also run only the state modifying part of the callback in an action.
 The advantage of this pattern is that it encourages you to not litter the place with `action`, but rather put all the state modifications as much as possible at the end of the whole process:
 
